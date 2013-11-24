@@ -16,6 +16,7 @@ set autoindent    "indent automatically
 set noshowmatch   "on typing a bracket, do not highlight the counterpart
 set showcmd       "show command in right lower corner while typing
 set bg=dark       "tell vim that the background is dark
+set number        "show linenumbers
 
 "map file explorer to F2
 map <F2> :e .<CR>
