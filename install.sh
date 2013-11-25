@@ -3,7 +3,7 @@
 
 backupdir=~/dotfiles.old  #directory for old dotfiles
 dotfiledir=~/dotfiles       #directory for new dotfiles
-dotfiles='bashrc vimrc vim'  #files to symlink
+dotfiles='bashrc vimrc vim singularrc'  #files to symlink
 
 mkdir "$backupdir"
 cd ~/

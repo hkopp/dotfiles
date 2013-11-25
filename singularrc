@@ -1,0 +1,2 @@
+system("--min-time","0.001");     //sets the minimal time
+system("--ticks-per-sec", 1000);  //gets ticks per second from the CPU
