@@ -1,0 +1,17 @@
+SetViMode(true);
+
+SetIgnoreSpaces(false);
+SetShellCompletion(true);
+SetIgnorePrompt(true);
+
+SetDebugOnError(true);
+
+Z := Integers();
+Zx<x> := PolynomialRing(Z);
+Q := Rationals();
+X := x;
+ZZ := MaximalOrder(ext<Z|x-1>);
+Qx := PolynomialRing(Q);
+AssignNames(~Qx, ["Qx.1"]);
+
+print "Defining Z, Zx<x>, Q, Qx (and x for printing), X=x and ZZ";
