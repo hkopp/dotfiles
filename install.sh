@@ -3,7 +3,7 @@
 
 backupdir=~/dotfiles.old  #directory for old dotfiles
 dotfiledir=~/dotfiles       #directory for new dotfiles
-dotfiles='bashrc i3status.conf magmarc screenrc singularrc vimrc vim'  #files to symlink
+dotfiles='bashrc i3 i3status.conf magmarc screenrc singularrc vimrc vim'  #files to symlink
 
 mkdir "$backupdir"
 cd ~/
