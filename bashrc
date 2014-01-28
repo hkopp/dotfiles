@@ -115,3 +115,7 @@ HISTIGNORE='??'
 
 #add current directory to $PATH
 export PATH=$PATH:.
+
+#make a cool function for debugging a running process
+#argument is the pid
+gdn(){ gdb -n /proc/$1/exe $1; }
