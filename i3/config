@@ -158,3 +158,6 @@ exec nm-applet
 bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume 0 -- '-5%'
 bindsym XF86AudioRaiseVolume exec /usr/bin/pactl set-sink-volume 0 -- '+5%'
 bindsym XF86AudioMute exec /usr/bin/pactl set-sink-volume 0 0
+
+#screenlock with random color
+bindsym $mod+Shift+O exec i3lock -c `md5sum <(echo $RANDOM)|cut -c1-6`
