@@ -1,0 +1,18 @@
+[alias]
+  co = checkout
+  diff = diff --patience
+  cdiff = diff --color-words --patience
+  cshow = show --color-words --patience
+  treelog = log --pretty=oneline --graph --all
+  lg = log --pretty=oneline
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+  editor = vim
+[merge]
+  conflictstyle = diff3
+  summary = true
+[diff "tex"]
+  xfuncname = "^(\\\\(sub)*section\\{.*)$" 
