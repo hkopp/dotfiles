@@ -1,4 +1,12 @@
+set editing-mode vi
+$if mode=vi
+set keymap vi-command
+# these are for vi-command mode
 # arrow up should search stuff starting with the same string
-"\e[A":history-search-backward
-# arrow down
-"\e[B":history-search-forward
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+set keymap vi-insert
+# these are for vi-insert mode
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+$endif

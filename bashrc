@@ -119,3 +119,7 @@ export PATH=$PATH:.
 #make a cool function for debugging a running process
 #argument is the pid
 gdn(){ gdb -n /proc/$1/exe $1; }
+
+#get vi keybindings
+#set -o vi
+#not necessary, since it is already configured in inputrc
