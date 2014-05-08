@@ -123,3 +123,6 @@ gdn(){ gdb -n /proc/$1/exe $1; }
 #get vi keybindings
 #set -o vi
 #not necessary, since it is already configured in inputrc
+
+export PATH=$PATH:/home/hjgk/uni/veins/omnetpp-4.4/bin #playing around with veins
+export TCL_LIBRARY=/usr/share/tcltk/tcl8.5
