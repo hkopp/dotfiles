@@ -17,6 +17,8 @@ set noshowmatch   "on typing a bracket, do not highlight the counterpart
 set showcmd       "show command in right lower corner while typing
 set bg=dark       "tell vim that the background is dark
 set number        "show linenumbers
+set textwidth=70  "wrap lines after 70 characters
+set formatoptions+=t  " ..except if they are comments
 
 "map file explorer to F2
 map <F2> :e .<CR>
