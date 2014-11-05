@@ -19,6 +19,8 @@ set bg=dark       "tell vim that the background is dark
 set number        "show linenumbers
 set textwidth=70  "wrap lines after 70 characters
 set formatoptions+=t  " ..except if they are comments
+set foldmethod=syntax  "fold based on syntax
+set tags=./tags;/ "to search for tagfiles recursively up to the root-directory
 
 "map file explorer to F2
 map <F2> :e .<CR>
