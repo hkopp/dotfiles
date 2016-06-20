@@ -3,7 +3,7 @@
 
 backupdir=~/dotfiles.old  #directory for old dotfiles
 dotfiledir=~/dotfiles       #directory for new dotfiles
-dotfiles='bashrc ctags gitconfig i3 i3status.conf inputrc magmarc screenrc singularrc vimrc vim'  #files to symlink
+dotfiles='bashrc ctags gitconfig i3 i3status.conf inputrc latexmkrc magmarc screenrc singularrc vimrc vim'  #files to symlink
 
 mkdir "$backupdir"
 cd ~/
