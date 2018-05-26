@@ -134,3 +134,9 @@ gdn(){ gdb -n /proc/$1/exe $1; }
 #get vi keybindings
 #set -o vi
 #not necessary, since it is already configured in inputrc
+
+export LD_LIBRARY_PATH=/usr/local/lib
+
+# Wargaming Scoreboard
+export WECHALLUSER="cryptobunny"
+export WECHALLTOKEN="0CC74-1C6D4-CEFDD-0EB23-0FF11-43B21"
