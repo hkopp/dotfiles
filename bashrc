@@ -27,6 +27,13 @@ shopt -s histappend
 HISTSIZE=''
 HISTFILESIZE=''
 
+# save the history after every command
+# this allows for sharing the history between multiple terminals
+# this usually breaks erasing duplicates
+# http://askubuntu.com/questions/80371/bash-history-handling-with-multiple-terminals
+# http://unix.stackexchange.com/questions/18212/bash-history-ignoredups-and-erasedups-setting-conflict-with-common-history <-- does not work
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
