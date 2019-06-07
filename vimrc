@@ -28,3 +28,17 @@ map <F2> :e .<CR>
 map <special> <F3> :%s/\s\+$//gc<CR>
 "map F12 to singular-syntax highlighting
 map <special> <F12> :set filetype=singular<CR>
+
+"" pathogen
+"execute pathogen#infect()
+
+"" vimwiki
+"set nocompatible
+"filetype plugin on
+"syntax on
+
+"" vim-latex
+"let g:tex_flavor='latex'
+"set iskeyword+=:
+
+set history=10000
