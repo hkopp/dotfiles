@@ -29,6 +29,12 @@ map <special> <F3> :%s/\s\+$//gc<CR>
 "map F12 to singular-syntax highlighting
 map <special> <F12> :set filetype=singular<CR>
 
+"map f5 to enable of spellcheck
+"https://stackoverflow.com/questions/23353009/vim-spellcheck-not-always-working-in-tex-file-check-region-in-vim
+map <special> <F5> :set spell<CR>:syntax spell toplevel<CR>
+"map f6 to disable of spellcheck
+map <special> <F6> :set nospell<CR>
+
 "" pathogen
 "execute pathogen#infect()
 
@@ -40,5 +46,8 @@ map <special> <F12> :set filetype=singular<CR>
 "" vim-latex
 "let g:tex_flavor='latex'
 "set iskeyword+=:
+
+" UltiSnip
+"let g:UltiSnipsSnippetDirectories=["vim-snippets"]
 
 set history=10000
