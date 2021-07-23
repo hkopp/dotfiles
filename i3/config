@@ -153,7 +153,11 @@ bar {
         status_command i3status
 }
 
+#leftie time
+# exec xmodmap -e "pointer = 3 2 1"
 exec nm-applet
+exec redshift -l 55.7:12.6 -t 5700:3600 -g 0.8 -m randr
+
 # pulse audio volume control
 bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume 0 -- '-5%'
 bindsym XF86AudioRaiseVolume exec /usr/bin/pactl set-sink-volume 0 -- '+5%'
