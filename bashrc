@@ -24,8 +24,8 @@ HISTCONTROL=erasedups:ignorespace
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=''
-HISTFILESIZE=''
+HISTSIZE=-1
+HISTFILESIZE=-1
 
 # save the history after every command
 # this allows for sharing the history between multiple terminals
