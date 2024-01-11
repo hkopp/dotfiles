@@ -149,3 +149,12 @@ export LD_LIBRARY_PATH=/usr/local/lib
 # export WECHALLTOKEN="0CC74-1C6D4-CEFDD-0EB23-0FF11-43B21"
 
 export EDITOR=$(which vim)
+
+[ ${BASH_VERSION} ] && PROMPT_COMMAND=logs
+
+logs() {
+  if [ ${BASH_VERSION} ]; then
+    echo "$(date "+%Y-%m-%d.%H:%M:%S") (${USER} - $(pwd)) - $(history 1)" \
+      >> ~/.logs/$(basename ${SHELL})-history-$(date "+%Y-%m-%d").log
+  fi
+}
