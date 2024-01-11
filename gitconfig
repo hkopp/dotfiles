@@ -1,4 +1,5 @@
 [alias]
+  p = pull
   co = checkout
   diff = diff --patience
   cdiff = diff --color-words --patience
